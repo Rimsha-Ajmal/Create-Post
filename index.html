@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="postContainer">
+        <h2 id="main-heading">Create Post</h2>
+        <div id="postBox">
+            <div id="imageBox">
+                <img src="assets/image.jpg" alt="profile-image">
+            </div>
+            <div id="nameBox">
+                <div>
+                <input type="text" name="username" id="username" placeholder="Enter your name">
+            </div>
+            <div id="audience">
+                <select id="audienceSelect">
+                    <option value="Public">Public</option>
+                    <option value="Friends">Friends</option>
+                    <option value="Only me">Only me</option>
+                  </select>
+                </div>
+        </div>
+        </div>
+        <div id="textBox">
+            <textarea id="postText" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+        </div>
+        <div id="listBox1">
+            <ul class="list">
+                <li id="textTransform">Aa</li>
+                <li id="bold">B</li>
+                <li id="italic">I</li>
+                <li id="underline">U</li>
+                <li id="alignLeft"><i class="fa-solid fa-align-left"></i></li>
+                <li id="alignCenter"><i class="fa-solid fa-align-center"></i></li>
+                <li id="alignRight"><i class="fa-solid fa-align-right"></i></li>
+            </ul>
+        </div>
+        <div id="listBox2">
+            <ul class="list">
+                <li><input type="color" id="textColor" class="color"></li>
+                <img src="assets/background-1.jpg" alt="" width="60px" class="bg-image">
+                <img src="assets/background-2.jpg" alt="" width="50px" class="bg-image">
+                <img src="assets/background-3.jpg" alt="" width="50px" class="bg-image">
+                <img src="assets/background-4.jpg" alt="" width="50px" class="bg-image">
+                <img src="assets/background-5.jpg" alt="" width="60px" class="bg-image">
+                <img src="assets/background-6.avif" alt="" width="60px"  class="bg-image">
+                <li><input type="color" id="backgroundColor" class="color"></li>
+            </ul>
+        </div>
+        <div id="colorText">
+            <p id="left">Text color</p>
+            <p id="right">Bg color</p>
+        </div>
+        <div id="button">
+            <button id="createPostBtn">Post</button>
+        </div>
+        <div id="feedbackBox">
+            <div><i class="fa-regular fa-heart"></i> Like</div>
+            <div><i class="fa-regular fa-comment"></i> Comment</div>
+            <div><i class="fa-solid fa-share"></i> Share</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
